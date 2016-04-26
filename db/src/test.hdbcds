@@ -1,0 +1,12 @@
+namespace test1.db;
+
+context test{
+entity world {
+    key continent: String(100);
+  };
+
+entity Country{
+ key name : String(100);
+partof : Association[0..1] to world;
+};
+};
